@@ -1,0 +1,258 @@
+intent,user_input,entity_name,entity_value,action,bot_reply
+greet,hi,,,utter_ask_account_type,To improve your assistance experience we need to know if you're a registered user or guest user?
+nlu_fallback,im registered user,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+nlu_fallback,i am a registered user,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+registered_user,i have account with pseb,,,utter_ask_user_id,Can you please provide us your Registration ID?
+reg_key,my registeration id is 145/2015/14d,user_id,145/2015/14d,utter_initial_information,To assist you, we need some information from you.
+utter_ask_name,Can you please tell me your name?
+name,my name is ahsan iqbal,name,ahsan iqbal,email,ahsan.ch100@hotmail.com,email,ahsan.ch100@hotmail.com,phone_number,03426295363,phone_number,03426295363,pseb_function,what's function of pseb,,,utter_ask_user_id,Can you please provide us your Registration ID?
+deny,no,,,greet,hi,,,utter_ask_account_type,To improve your assistance experience we need to know if you're a registered user or guest user?
+nlu_fallback,im registered user,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+nlu_fallback,i am a registered user,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+registered_user,i have account with pseb,,,utter_ask_user_id,Can you please provide us your Registration ID?
+reg_key,my registeration id is 145/2015/14d,user_id,145/2015/14d,utter_initial_information,To assist you, we need some information from you.
+utter_ask_name,Can you please tell me your name?
+name,my name is ahsan iqbal,name,ahsan iqbal,email,ahsan.ch100@hotmail.com,email,ahsan.ch100@hotmail.com,phone_number,03426295363,phone_number,03426295363,pseb_function,what's function of pseb,,,utter_ask_user_id,Can you please provide us your Registration ID?
+deny,no,,,pseb_function,pseb function,,,utter_ask_user_id,Can you please provide us your Registration ID?
+pseb_function,pseb function ?,,,utter_ask_user_id,Can you please provide us your Registration ID?
+nlu_fallback,no registeration,,,utter_ask_support_email,I couldn't understand what you're trying to say.
+Would you like to send an email to our support team for this conversation?
+affirm,yes,,,nlu_fallback,hdf adkf ajfd,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+nlu_fallback,can you please drop me to my school,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+nlu_fallback,which sector of islo has pseb builidng in,,,utter_out_of_scope,I would like you to rephrase, I couldn't understand what you're saying.
+greet,hi,,,utter_ask_account_type,To improve your assistance experience we need to know if you're a registered user or guest user?
+nlu_fallback,i'm guest user,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+not_registered_user,i am guest user,,,utter_initial_information,To assist you, we need some information from you.
+utter_ask_name,Can you please tell me your name?
+name,my name is ahsan iqbal,name,ahsan iqbal,email,ahsan.ch100@hotmail.com,email,ahsan.ch100@hotmail.com,phone_number,03426295363,phone_number,03426295363,nlu_fallback,can you please drop me to my school,,,utter_ask_support_email,I couldn't understand what you're trying to say.
+Would you like to send an email to our support team for this conversation?
+deny,no,,,type_of_question_delt,can you drop me to school,,,utter_type_of_question_delt,You are welcome to contact me with any questions concerning PSEB.
+nlu_fallback,can you please drop me to schol in islo sector,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+nlu_fallback,hwo would that be able to play hockey,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+nlu_fallback,pseb building is in which sector,,,utter_out_of_scope,I would like you to rephrase, I couldn't understand what you're saying.
+nlu_fallback,kdfjalk aldjf akadjflaj dkfjalkj aldkjfl,,,utter_out_of_scope,I would like you to rephrase, I couldn't understand what you're saying.
+nlu_fallback,jdskajf,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+greet,hi,,,utter_ask_account_type,To improve your assistance experience we need to know if you're a registered user or guest user?
+registration,register,,,utter_registration,Registration guidelines are at this link https://pseb.org.pk/app. You can follow the explained steps to get registered.
+greet,hi,,,utter_ask_account_type,To improve your assistance experience we need to know if you're a registered user or guest user?
+registered_user,im registered suer,,,utter_ask_user_id,Can you please provide us your Registration ID?
+reg_key,id is dkfj/2014/1101/1d,user_id,dkfj/2014/1101/1d,utter_initial_information,To assist you, we need some information from you.
+utter_ask_name,Can you please tell me your name?
+name,ahsan,name,ahsan,nlu_fallback,ahsan.ch10@hotmailc.om,email,ahsan.ch10@hotmailc.om,phone_number,03426295363,phone_number,03426295363,pseb_function,what's the function of pseb ?,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+phone_number,can you drop me to school in inslo sector i 11,phone_number,11,registration,what's the registeration process,,,utter_registration,Registration guidelines are at this link https://pseb.org.pk/app. You can follow the explained steps to get registered.
+nlu_fallback,caaflkajf akdjfa,,,utter_ask_support_email,I couldn't understand what you're trying to say.
+Would you like to send an email to our support team for this conversation?
+pseb_function,what's the purpose of pseb ?,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+nlu_fallback,how would you liek dkafj djjdj,,,utter_ask_support_email,I couldn't understand what you're trying to say.
+Would you like to send an email to our support team for this conversation?
+deny,no,,,greet,hi,,,utter_ask_account_type,To improve your assistance experience we need to know if you're a registered user or guest user?
+affirm,Yes,,,greet,hi,,,utter_ask_account_type,To improve your assistance experience we need to know if you're a registered user or guest user?
+not_registered_user,i'm guest user,,,utter_initial_information,To assist you, we need some information from you.
+utter_ask_name,Can you please tell me your name?
+name,my name is bilal mohsin,name,bilal,nlu_fallback,dkfj@ddd.com,,,utter_out_of_scope,I would like you to rephrase, I couldn't understand what you're saying.
+email,my email is ahdan.ch@hotmicl.com,,,email_to_support,i have provided you my email,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+affirm,yes,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,reg_status,tell me my registeration status ?,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registerd suer,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+nlu_fallback,lksdafj;la alkjdflkaj lkajfdlkja,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,;lajfd;alkjf alkfdjlak f;lkajf;lkaj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+nlu_fallback,yes im,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope3,Debug Story 3
+affirm,yes,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+nlu_fallback,yes im,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope3,Debug Story 3
+affirm,yes,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,nlu_fallback,fkajfdljaf dfakljl;a ldfja;lj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,lkajfdlk aldfj;lka alfjd;lka lakjdflkj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+nlu_fallback,yes im,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope3,Debug Story 3
+affirm,yes,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,nlu_fallback,fkajfdljaf dfakljl;a ldfja;lj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,lkajfdlk aldfj;lka alfjd;lka lakjdflkj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,pseb_function,what's the function of pseb ?,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+nlu_fallback,kfldsja;lfj akfdj;la a;lkfdjl;kasj a;lfjd;laj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope2,Debug Story 2
+nlu_fallback,lkjdf;lkja alkdfj;lak alfj;la,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+affirm,yes,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im regisateered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,reg_status,can you tell me my registeration status,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,where is the location of school of my bro,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im regisateered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,reg_status,can you tell me my registeration status,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,where is the location of school of my bro,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,deny,no,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+pseb_function,what's the function of pseb ?,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+reg_status,what's my registeration status,,,utter_reg_acc_unregistered_users,I would not be able to help you in this regard because this facility is only for registered users.
+account_status,tell me my account status,,,utter_reg_acc_unregistered_users,I would not be able to help you in this regard because this facility is only for registered users.
+reg_status,what's my reg status,,,utter_reg_acc_unregistered_users,I would not be able to help you in this regard because this facility is only for registered users.
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+nlu_fallback,im,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope3,Debug Story 3
+nlu_fallback,kdaj;lfkjalkjfdlasjf,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+nlu_fallback,dlfkjaldfjka;lfkjlkdsja,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope3,Debug Story 3
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,pseb_function,what's the fucntion of pseb,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+reg_status,my reg status,,,reg_status,wha'ts my registeration status,,,reg_status,my reg status,,,account_status,tell me my account status,,,account_status,accnt status,,,nlu_fallback,flkajlfd akfdjalkjf akjf;lak,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope3,Debug Story 3
+nlu_fallback,alkfjlak adfjlakj aldkjf;laj,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+nlu_fallback,flkjal;kfkja alkfdj;lak alkdfj;lkaj,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope2,Debug Story 2
+nlu_fallback,lakjlf;a aldsfj;la alkfdj;l,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+affirm,yes,,,registered_user,im registed user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,pseb_function,what's the func of pseb,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+reg_status,tell me my registeration status,,,account_status,my account status ?,,,nlu_fallback,alkfja;lk aldkjf;la alkdjfl,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,kfjaklfdj alkdfjlka ljdflkj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,registered_user,im registed user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,pseb_function,what's the func of pseb,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+reg_status,tell me my registeration status,,,account_status,my account status ?,,,nlu_fallback,alkfja;lk aldkjf;la alkdjfl,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,kfjaklfdj alkdfjlka ljdflkj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,nlu_fallback,lfja;lfk alkdjfl dkfkj,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,dlfkjalk alkdfjlk aldkjf,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+affirm,yes,,,registered_user,im registed user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,pseb_function,what's the func of pseb,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+reg_status,tell me my registeration status,,,account_status,my account status ?,,,nlu_fallback,alkfja;lk aldkjf;la alkdjfl,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,kfjaklfdj alkdfjlka ljdflkj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,nlu_fallback,lfja;lfk alkdjfl dkfkj,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,dlfkjalk alkdfjlk aldkjf,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+affirm,yes,,,nlu_fallback,l;dkjflka alkdjfl;a akldfj;laj alkdjf,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,ldfkjal alkdfjl;a alkdjf;lk akdkfjjj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+not_generate_ticket,no idon't want to generate a ticket,,,greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registerd user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,nlu_fallback,fdlkjf;la alkdfj akdjflkjalfkjd akfdj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,fjalkdfj aldjf;lak jdkfj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registerd user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,nlu_fallback,fdlkjf;la alkdfj akdjflkjalfkjd akfdj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,fjalkdfj aldjf;lak jdkfj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+reg_status,tell me my registeration status,,,account_status,my account status,,,live_agent,lakjdflka akjdflk aldjflk,,,nlu_fallback,jdkfjdk dlkfj;al alkdjf;lja aldjf;lka aldjf;,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,jkj;lkjj lkfdja;l ajdf,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registerd user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,nlu_fallback,fdlkjf;la alkdfj akdjflkjalfkjd akfdj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,fjalkdfj aldjf;lak jdkfj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+reg_status,tell me my registeration status,,,account_status,my account status,,,live_agent,lakjdflka akjdflk aldjflk,,,nlu_fallback,jdkfjdk dlkfj;al alkdjf;lja aldjf;lka aldjf;,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,jkj;lkjj lkfdja;l ajdf,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+nlu_fallback,jjjdakfjlkaj aldkjfl;kj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,ldkjflakj falkjfdlkj a,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+affirm,yes,,,utter_out_of_scope1,Debug Story 1
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registerd user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,nlu_fallback,fdlkjf;la alkdfj akdjflkjalfkjd akfdj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,fjalkdfj aldjf;lak jdkfj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+reg_status,tell me my registeration status,,,account_status,my account status,,,live_agent,lakjdflka akjdflk aldjflk,,,nlu_fallback,jdkfjdk dlkfj;al alkdjf;lja aldjf;lka aldjf;,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,jkj;lkjj lkfdja;l ajdf,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+nlu_fallback,jjjdakfjlkaj aldkjfl;kj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,ldkjflakj falkjfdlkj a,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+affirm,yes,,,utter_out_of_scope1,Debug Story 1
+nlu_fallback,lkdjf;lakj a;lkdjfl;k alkdjf;lkaj aldkdjfkl,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,lkaj;ldfk alkjdfkj dskjfjjdkfj kdjfka kdfhhaefhef,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+greet,hello,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+nlu_fallback,dflkkja;lk a;ldkfj;ak alkjf;laj aldkfj;laj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,;lja;ldfj alkjkdf;lkja ldkfjl;akjfl aalkdjf,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+greet,hello,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+nlu_fallback,dflkkja;lk a;ldkfj;ak alkjf;laj aldkfj;laj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,;lja;ldfj alkjkdf;lkja ldkfjl;akjfl aalkdjf,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+nlu_fallback,ka;lkdfjl akdjf;lkaj alkdjf;lkj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,lkajdf;lkj akjdfl;kajy,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+affirm,yes,,,utter_out_of_scope1,Debug Story 1
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,my reg id is FR/PSEB/2021/22,user_id,FR/PSEB/2021/22,utter_initial_information,To assist you, we need some information from you.
+utter_ask_name,May I know your name please?
+name,my name is ahsan iqbal,name,ahsan iqbal,nlu_fallback,my email is kjdfldfj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope3,Debug Story 3
+nlu_fallback,my email is ahsan.ch,name,ahsan.ch,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+nlu_fallback,my email is ahsan.ch100@,name,ahsan.ch100@,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+email,my email is ahsan.ch100@hotmail.com,email,ahsan.ch100@hotmail.com,utter_ask_support_email,Sorry, I did not understand what you meant. For our current conversation, would you like to send an email to our support team?
+deny,no,,,laugh,hahahah,,,utter_laugh,That's funny.
+end_chat,bye,,,utter_end_chat,This was fun talking to you. Bye.
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+laugh,hahahhahahahah,,,utter_laugh,Laughing with you seems funny.
+end_chat,bye,,,utter_end_chat,This was fun talking to you. Bye.
+reg_status,tell me my registeration status,,,account_status,tell me my account status,,,nlu_fallback,hdflkajd f;lakd flakjdfkl d,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+utter_out_of_scope1,Debug Story 1
+nlu_fallback,lkdfl;ka dlkjfla lakjdfl aljdfkjkdjfkj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+affirm,yes,,,utter_out_of_scope1,Debug Story 1
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im a registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+forget_ac_reg_id,I forgot it,,,utter_initial_information,To assist you, we need some information from you.
+utter_ask_name,May I know your name please?
+name,ahsan,name,ahsan,email,ahsan.ch100@hotmail.com,email,ahsan.ch100@hotmail.com,phone_number,03426295363,phone_number,03426295363,greet,hi,,,utter_greet,Hello! What do you need help with?
+reg_status,tell me your registeration status,,,utter_reg_acc_unregistered_users,I would not be able to help you in this regard because this facility is only for registered users.
+account_status,what's my account status,,,utter_reg_acc_unregistered_users,I would not be able to help you in this regard because this facility is only for registered users.
+nlu_fallback,dlfkjalkfd alkjdfk alkdjf aldjfla flajl,,,utter_out_of_scope,Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?
+nlu_fallback,l;kdjflkka dlkfjal dljf alkjdf a;lkjf,,,utter_ask_support_email,Sorry, I did not understand what you meant. For our current conversation, would you like to send an email to our support team?
+deny,no,,,affirm,,,,utter_out_of_scope1,Debug Story 1
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+reg_status,tell me registeration status,,,utter_reg_acc_unregistered_users,I would not be able to help you in this regard because this facility is only for registered users.
+account_status,what's my account status,,,utter_reg_acc_unregistered_users,I would not be able to help you in this regard because this facility is only for registered users.
+pseb_function,function of pseb ?,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+pseb_function,what's the funciton of pseb,,,utter_pseb_function,PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them.
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+pseb_function,what's the fucntion of pseb,,,pseb_function,what' is the function of pseb ?,,,nlu_fallback,lkdjf;lka a;lkdjfkdj kajflkdj dlfkjdkj,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope2,Debug Story 2
+nlu_fallback,cflkajf;lka lakdjflkd dlkjflkdj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+deny,no,,,utter_out_of_scope2,Debug Story 2
+greet,hi,,,utter_ask_account_type,To enhance your assistance experience we need to know if you're a registered user?
+registered_user,im registered user,,,utter_ask_user_id,Would you be able to provide me your registration ID?
+reg_key,FR/PSEB/2021/19,user_id,FR/PSEB/2021/19,greet,hi,,,utter_greet,Hello! Ovex Technologies What would you like to know?
+reg_status,tell me my registeration status,,,nlu_fallback,kfajfldkjaf;klaj;l,,,utter_out_of_scope,Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing.
+utter_out_of_scope2,Debug Story 2
+nlu_fallback,lkdjflajfdlakjflkjaldfjlkafjdlkj,,,utter_ask_generate_ticket,Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?
+affirm,yes,,,utter_out_of_scope1,Debug Story 1

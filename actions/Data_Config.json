@@ -1,0 +1,6 @@
+{
+  "pseb_API_url" : "https://pseb.org.pk/app/freelancers/staging/api/",
+  "conversation_file_path" : "C:\\Users\\ahsan\\Desktop\\chatbot_PSEB_final_version\\Sockets_chatbot_pseb\\",
+  "faq_intent_path" : "C:\\Users\\ahsan\\Desktop\\chatbot_PSEB_final_version\\Rasa_chatbot_pseb\\actions\\",
+  "faq_intent_file": "pseb_intents_csv.csv"
+}

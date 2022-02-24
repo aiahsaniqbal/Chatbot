@@ -1,0 +1,742 @@
+col1,col2
+Sender ID,b05eaa869b80463ab2314b7e3a925cec
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,tell me my registeration status
+bot,Your registration status is: Registered.
+user,kfajfldkjaf;klaj;l
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 2
+user,lkdjflajfdlakjflkjaldfjlkafjdlkj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,yes
+bot,Debug Story 1
+Sender ID,3a7f6c9ec83a407381ffb63d80f7579d
+user,
+bot,Debug Story 1
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,tell me registeration status
+bot,I would not be able to help you in this regard because this facility is only for registered users.
+user,what's my account status
+bot,I would not be able to help you in this regard because this facility is only for registered users.
+user,function of pseb ?
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,what's the funciton of pseb
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,what's the fucntion of pseb
+bot,"For intent: pseb_function, fallback action."
+user,what' is the function of pseb ?
+bot,"For intent: pseb_function, fallback action."
+user,lkdjf;lka a;lkdjfkdj kajflkdj dlfkjdkj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 2
+user,cflkajf;lka lakdjflkd dlkjflkdj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+Sender ID,252b4ac3d8d94c7daf990b6985c729bc
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im a registered user
+bot,Would you be able to provide me your registration ID?
+user,I forgot it
+bot,"To assist you, we need some information from you."
+bot,May I know your name please?
+user,ahsan
+entity_name,ahsan
+bot,"Ahsan, I would like to know your Email address."
+user,ahsan.ch100@hotmail.com
+entity_email,ahsan.ch100@hotmail.com
+bot,"Please Ahsan, can you provide your contact number too?"
+user,03426295363
+entity_phone_number,03426295363
+bot,"Thanks for taking out some time to update us with your details.
+What information you would like to know about PSEB?"
+user,hi
+bot,Hello! What do you need help with?
+user,tell me your registeration status
+bot,I would not be able to help you in this regard because this facility is only for registered users.
+user,what's my account status
+bot,I would not be able to help you in this regard because this facility is only for registered users.
+user,dlfkjalkfd alkjdfk alkdjf aldjfla flajl
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+user,l;kdjflkka dlkfjal dljf alkjdf a;lkjf
+bot,"Sorry, I did not understand what you meant. For our current conversation, would you like to send an email to our support team?"
+user,no
+Sender ID,252b4ac3d8d94c7daf990b6985c729bc
+user,hahahah
+bot,That's funny.
+user,bye
+bot,This was fun talking to you. Bye.
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,hahahhahahahah
+bot,Laughing with you seems funny.
+user,bye
+bot,This was fun talking to you. Bye.
+user,tell me my registeration status
+bot,Your registration status is: Registered.
+user,tell me my account status
+bot,Your user account status is: Verified.
+user,hdflkajd f;lakd flakjdfkl d
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 1
+user,lkdfl;ka dlkjfla lakjdfl aljdfkjkdjfkj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,yes
+bot,Debug Story 1
+Sender ID,32da0720d5a24ba790b883541819de63
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registered user
+bot,Would you be able to provide me your registration ID?
+user,my reg id is FR/PSEB/2021/22
+entity_user_id,FR/PSEB/2021/22
+bot,We could not get your Registration ID verified. You can proceed as a guest user.
+bot,"To assist you, we need some information from you."
+bot,May I know your name please?
+user,my name is ahsan iqbal
+entity_name,ahsan iqbal
+bot,"Ahsan, I would like to know your Email address."
+user,my email is kjdfldfj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 3
+user,my email is ahsan.ch
+entity_name,ahsan.ch
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+user,my email is ahsan.ch100@
+entity_name,ahsan.ch100@
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+user,my email is ahsan.ch100@hotmail.com
+entity_email,ahsan.ch100@hotmail.com
+bot,"Sorry, I did not understand what you meant. For our current conversation, would you like to send an email to our support team?"
+user,no
+Sender ID,32da0720d5a24ba790b883541819de63
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,hello
+bot,Hello! Ovex Technologies What would you like to know?
+user,dflkkja;lk a;ldkfj;ak alkjf;laj aldkfj;laj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,;lja;ldfj alkjkdf;lkja ldkfjl;akjfl aalkdjf
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+bot,Okay. Do you want to know anything else?
+user,ka;lkdfjl akdjf;lkaj alkdjf;lkj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,lkajdf;lkj akjdfl;kajy
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,yes
+bot,Debug Story 1
+Sender ID,32da0720d5a24ba790b883541819de63
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,hello
+bot,Hello! Ovex Technologies What would you like to know?
+user,dflkkja;lk a;ldkfj;ak alkjf;laj aldkfj;laj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,;lja;ldfj alkjkdf;lkja ldkfjl;akjfl aalkdjf
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+Sender ID,d558dbb71c4941ea82fb135b4c72613c
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registerd user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,fdlkjf;la alkdfj akdjflkjalfkjd akfdj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,fjalkdfj aldjf;lak jdkfj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+bot,Okay. Do you want to know anything else?
+user,tell me my registeration status
+bot,Your registration status is: Registered.
+user,my account status
+bot,Your user account status is: Verified.
+user,lakjdflka akjdflk aldjflk
+bot,Your user account status is: Verified.
+user,jdkfjdk dlkfj;al alkdjf;lja aldjf;lka aldjf;
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 1
+user,jkj;lkjj lkfdja;l ajdf
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+bot,Okay. Do you want to know anything else?
+user,jjjdakfjlkaj aldkjfl;kj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,ldkjflakj falkjfdlkj a
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,yes
+bot,Debug Story 1
+bot,"We have successfully generated a Ticket for you.
+Your Ticket ID is: z7MKy9EE22."
+user,lkdjf;lakj a;lkdjfl;k alkdjf;lkaj aldkdjfkl
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 1
+user,lkaj;ldfk alkjdfkj dskjfjjdkfj kdjfka kdfhhaefhef
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+Sender ID,d558dbb71c4941ea82fb135b4c72613c
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registerd user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,fdlkjf;la alkdfj akdjflkjalfkjd akfdj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,fjalkdfj aldjf;lak jdkfj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+bot,Okay. Do you want to know anything else?
+user,tell me my registeration status
+bot,Your registration status is: Registered.
+user,my account status
+bot,Your user account status is: Verified.
+user,lakjdflka akjdflk aldjflk
+bot,Your user account status is: Verified.
+user,jdkfjdk dlkfj;al alkdjf;lja aldjf;lka aldjf;
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 1
+user,jkj;lkjj lkfdja;l ajdf
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+bot,Okay. Do you want to know anything else?
+user,jjjdakfjlkaj aldkjfl;kj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,ldkjflakj falkjfdlkj a
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,yes
+bot,Debug Story 1
+Sender ID,d558dbb71c4941ea82fb135b4c72613c
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registerd user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,fdlkjf;la alkdfj akdjflkjalfkjd akfdj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,fjalkdfj aldjf;lak jdkfj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+bot,Okay. Do you want to know anything else?
+user,tell me my registeration status
+bot,Your registration status is: Registered.
+user,my account status
+bot,Your user account status is: Verified.
+user,lakjdflka akjdflk aldjflk
+bot,Your user account status is: Verified.
+user,jdkfjdk dlkfj;al alkdjf;lja aldjf;lka aldjf;
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 1
+user,jkj;lkjj lkfdja;l ajdf
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+Sender ID,d558dbb71c4941ea82fb135b4c72613c
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registerd user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,fdlkjf;la alkdfj akdjflkjalfkjd akfdj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,fjalkdfj aldjf;lak jdkfj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Debug Story 2
+Sender ID,7dfe48bb79ff402ebe83970699fc33ec
+user,im registed user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,what's the func of pseb
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,tell me my registeration status
+bot,Your registration status is: Registered.
+user,my account status ?
+bot,Your user account status is: Verified.
+user,alkfja;lk aldkjf;la alkdjfl
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,kfjaklfdj alkdfjlka ljdflkj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,"We have successfully generated a Ticket for you.
+Your Ticket ID is: 8RJv4ozD22."
+user,lfja;lfk alkdjfl dkfkj
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 1
+user,dlfkjalk alkdfjlk aldkjf
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,yes
+bot,"We have successfully generated a Ticket for you.
+Your Ticket ID is: bYwh6Rq022."
+user,l;dkjflka alkdjfl;a akldfj;laj alkdjf
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 1
+user,ldfkjal alkdfjl;a alkdjf;lk akdkfjjj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no idon't want to generate a ticket
+Sender ID,7dfe48bb79ff402ebe83970699fc33ec
+user,im registed user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,what's the func of pseb
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,tell me my registeration status
+bot,Your registration status is: Registered.
+user,my account status ?
+bot,Your user account status is: Verified.
+user,alkfja;lk aldkjf;la alkdjfl
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,kfjaklfdj alkdfjlka ljdflkj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,"We have successfully generated a Ticket for you.
+Your Ticket ID is: 8RJv4ozD22."
+user,lfja;lfk alkdjfl dkfkj
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 1
+user,dlfkjalk alkdfjlk aldkjf
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,yes
+Sender ID,7dfe48bb79ff402ebe83970699fc33ec
+user,im registed user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,what's the func of pseb
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,tell me my registeration status
+bot,Your registration status is: Registered.
+user,my account status ?
+bot,Your user account status is: Verified.
+user,alkfja;lk aldkjf;la alkdjfl
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,kfjaklfdj alkdfjlka ljdflkj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+Sender ID,q3f0-AwhmjeOfTXiAAAB
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,what's the function of pseb ?
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,what's my registeration status
+bot,I would not be able to help you in this regard because this facility is only for registered users.
+user,tell me my account status
+bot,I would not be able to help you in this regard because this facility is only for registered users.
+user,what's my reg status
+bot,I would not be able to help you in this regard because this facility is only for registered users.
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 3
+user,kdaj;lfkjalkjfdlasjf
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+user,dlfkjaldfjka;lfkjlkdsja
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 3
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,what's the fucntion of pseb
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,my reg status
+bot,Your registration status is: Registered.
+user,wha'ts my registeration status
+bot,Your registration status is: Registered.
+user,my reg status
+bot,Your registration status is: Registered.
+user,tell me my account status
+bot,Your user account status is: Verified.
+user,accnt status
+bot,Your user account status is: Verified.
+user,flkajlfd akfdjalkjf akjf;lak
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 3
+user,alkfjlak adfjlakj aldkjf;laj
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+user,flkjal;kfkja alkfdj;lak alkdfj;lkaj
+bot,"Apologies from my side, I did not get what you’re trying to say. Can you please rephrase?"
+bot,Debug Story 2
+user,lakjlf;a aldsfj;la alkfdj;l
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,yes
+Sender ID,BMP_SQUNwdLVTNkLAAAD
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im regisateered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,can you tell me my registeration status
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,where is the location of school of my bro
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Okay. Do you want to know anything else?
+user,no
+Sender ID,BMP_SQUNwdLVTNkLAAAD
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im regisateered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,can you tell me my registeration status
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,where is the location of school of my bro
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+Sender ID,_4eflMPV32qqLXdcAAAB
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,yes im
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 3
+user,yes
+bot,"We have successfully generated a Ticket for you.
+Your Ticket ID is: None."
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,fkajfdljaf dfakljl;a ldfja;lj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,lkajfdlk aldfj;lka alfjd;lka lakjdflkj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+bot,Okay. Do you want to know anything else?
+user,what's the function of pseb ?
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,kfldsja;lfj akfdj;la a;lkfdjl;kasj a;lfjd;laj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 2
+user,lkjdf;lkja alkdfj;lak alfj;la
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,yes
+Sender ID,_4eflMPV32qqLXdcAAAB
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,yes im
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 3
+user,yes
+bot,"We have successfully generated a Ticket for you.
+Your Ticket ID is: None."
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,fkajfdljaf dfakljl;a ldfja;lj
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,lkajfdlk aldfj;lka alfjd;lka lakjdflkj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+Sender ID,_4eflMPV32qqLXdcAAAB
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,yes im
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 3
+user,yes
+Sender ID,04b64462aab5440a97ffcf0b7fca83ce
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,im registerd suer
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,hi
+bot,Hello! Ovex Technologies What would you like to know?
+user,lksdafj;la alkjdflkaj lkajfdlkja
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+bot,Debug Story 1
+user,;lajfd;alkjf alkfdjlak f;lkajf;lkaj
+bot,"Sorry, I did not understand what you meant. For our current conversation, may I go ahead and generate a ticket for you?"
+user,no
+Sender ID,bb41380eb02b412db8d445d69fe09502
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,registered user
+bot,Would you be able to provide me your registration ID?
+user,FR/PSEB/2021/19
+entity_user_id,FR/PSEB/2021/19
+bot,"You have been successfully verified. 
+What information you would like to know about PSEB?"
+user,tell me my registeration status ?
+Sender ID,ab7c8b21cf494fc8a0ae7dbded1e8cdc
+user,hi
+bot,To enhance your assistance experience we need to know if you're a registered user?
+user,yes
+Sender ID,FoFmQa2QDkiKN4ZBAAAD
+user,hi
+bot,To improve your assistance experience we need to know if you're a registered user or guest user?
+user,i'm guest user
+bot,"To assist you, we need some information from you."
+bot,Can you please tell me your name?
+user,my name is bilal mohsin
+entity_name,bilal
+bot,"Bilal, I would like to know your Email address."
+user,dkfj@ddd.com
+bot,"I would like you to rephrase, I couldn't understand what you're saying."
+user,my email is ahdan.ch@hotmicl.com
+user,i have provided you my email
+Sender ID,45e844da-64a6-11ec-9826-90324ba316a8
+user,hi
+bot,To improve your assistance experience we need to know if you're a registered user or guest user?
+user,Yes
+Sender ID,6b4d7891265a4dc4aca0cbc574812ed4
+user,can you drop me to school
+bot,You are welcome to contact me with any questions concerning PSEB.
+user,can you please drop me to schol in islo sector
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,hwo would that be able to play hockey
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,pseb building is in which sector
+bot,"I would like you to rephrase, I couldn't understand what you're saying."
+user,kdfjalk aldjf akadjflaj dkfjalkj aldkjfl
+bot,"I would like you to rephrase, I couldn't understand what you're saying."
+user,jdskajf
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,hi
+bot,To improve your assistance experience we need to know if you're a registered user or guest user?
+user,register
+bot,Registration guidelines are at this link https://pseb.org.pk/app. You can follow the explained steps to get registered.
+user,hi
+bot,To improve your assistance experience we need to know if you're a registered user or guest user?
+user,im registered suer
+bot,Can you please provide us your Registration ID?
+user,id is dkfj/2014/1101/1d
+entity_user_id,dkfj/2014/1101/1d
+bot,We could not get you verified. For now we can treat you as Guest.
+bot,"To assist you, we need some information from you."
+bot,Can you please tell me your name?
+user,ahsan
+entity_name,ahsan
+bot,"Ahsan, I would like to know your Email address."
+user,ahsan.ch10@hotmailc.om
+entity_email,ahsan.ch10@hotmailc.om
+bot,"Please Ahsan, can you provide your contact number too?"
+user,03426295363
+entity_phone_number,03426295363
+bot,"Guest Contact Created. Your Guest ID is: 47.
+What information you would like to know about PSEB?"
+user,what's the function of pseb ?
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,can you drop me to school in inslo sector i 11
+entity_phone_number,11
+user,what's the registeration process
+bot,Registration guidelines are at this link https://pseb.org.pk/app. You can follow the explained steps to get registered.
+user,caaflkajf akdjfa
+bot,"I couldn't understand what you're trying to say.
+Would you like to send an email to our support team for this conversation?"
+user,what's the purpose of pseb ?
+bot,"PSEB major function is to register IT companies, call centers and freelancers in Pakistan and provide regulatory and corporate incentives and facilitation to them."
+user,how would you liek dkafj djjdj
+bot,"I couldn't understand what you're trying to say.
+Would you like to send an email to our support team for this conversation?"
+user,no
+Sender ID,cef5d852e13244e7b7dc33988fb158ed
+user,hdf adkf ajfd
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,can you please drop me to my school
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,which sector of islo has pseb builidng in
+bot,"I would like you to rephrase, I couldn't understand what you're saying."
+user,hi
+bot,To improve your assistance experience we need to know if you're a registered user or guest user?
+user,i'm guest user
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,i am guest user
+bot,"To assist you, we need some information from you."
+bot,Can you please tell me your name?
+user,my name is ahsan iqbal
+entity_name,ahsan iqbal
+bot,"Ahsan, I would like to know your Email address."
+user,ahsan.ch100@hotmail.com
+entity_email,ahsan.ch100@hotmail.com
+bot,"Please Ahsan, can you provide your contact number too?"
+user,03426295363
+entity_phone_number,03426295363
+bot,"Guest Contact Created. Your Guest ID is: 39.
+What information you would like to know about PSEB?"
+user,can you please drop me to my school
+bot,"I couldn't understand what you're trying to say.
+Would you like to send an email to our support team for this conversation?"
+user,no
+Sender ID,ba0f6724daea48259df5aa00ad4e6bb4
+user,hi
+bot,To improve your assistance experience we need to know if you're a registered user or guest user?
+user,im registered user
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,i am a registered user
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,i have account with pseb
+bot,Can you please provide us your Registration ID?
+user,my registeration id is 145/2015/14d
+entity_user_id,145/2015/14d
+bot,We could not get you verified. For now we can treat you as Guest.
+bot,"To assist you, we need some information from you."
+bot,Can you please tell me your name?
+user,my name is ahsan iqbal
+entity_name,ahsan iqbal
+bot,"Ahsan, I would like to know your Email address."
+user,ahsan.ch100@hotmail.com
+entity_email,ahsan.ch100@hotmail.com
+bot,"Please Ahsan, can you provide your contact number too?"
+user,03426295363
+entity_phone_number,03426295363
+bot,"Guest Contact Created. Your Guest ID is: 31.
+What information you would like to know about PSEB?"
+user,what's function of pseb
+bot,Can you please provide us your Registration ID?
+user,no
+bot,All Chats saved.
+user,pseb function
+bot,Can you please provide us your Registration ID?
+user,pseb function ?
+bot,Can you please provide us your Registration ID?
+user,no registeration
+bot,"I couldn't understand what you're trying to say.
+Would you like to send an email to our support team for this conversation?"
+user,yes
+Sender ID,ba0f6724daea48259df5aa00ad4e6bb4
+user,hi
+bot,To improve your assistance experience we need to know if you're a registered user or guest user?
+user,im registered user
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,i am a registered user
+bot,"Sorry, I have not understood what your'e trying to say. Please! come up again by rephrasing."
+user,i have account with pseb
+bot,Can you please provide us your Registration ID?
+user,my registeration id is 145/2015/14d
+entity_user_id,145/2015/14d
+bot,We could not get you verified. For now we can treat you as Guest.
+bot,"To assist you, we need some information from you."
+bot,Can you please tell me your name?
+user,my name is ahsan iqbal
+entity_name,ahsan iqbal
+bot,"Ahsan, I would like to know your Email address."
+user,ahsan.ch100@hotmail.com
+entity_email,ahsan.ch100@hotmail.com
+bot,"Please Ahsan, can you provide your contact number too?"
+user,03426295363
+entity_phone_number,03426295363
+bot,"Guest Contact Created. Your Guest ID is: 31.
+What information you would like to know about PSEB?"
+user,what's function of pseb
+bot,Can you please provide us your Registration ID?
+user,no

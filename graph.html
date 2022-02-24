@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style id="graph-style">
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.getElementById('graph-style').sheet.cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_out_of_scope];
+2 [class="", fontsize=12, label=utter_ask_generate_ticket];
+3 [class="", fontsize=12, label=action_conversation_storing];
+4 [class="", fontsize=12, label=action_generate_ticket];
+11 [class="", fontsize=12, label=action_conversation_storing];
+12 [class="", fontsize=12, label=action_escalate_no_ticket];
+18 [class="", fontsize=12, label=utter_ask_support_email];
+19 [class="", fontsize=12, label=action_conversation_storing];
+20 [class="", fontsize=12, label=action_support_email];
+27 [class="", fontsize=12, label=action_conversation_storing];
+28 [class="", fontsize=12, label=action_escalate_no_support_email];
+34 [class="", fontsize=12, label=utter_out_of_scope];
+35 [class="", fontsize=12, label=utter_ask_account_type];
+36 [class="", fontsize=12, label=utter_ask_user_id];
+37 [class="", fontsize=12, label=action_verify_registered_user];
+41 [class="", fontsize=12, label=utter_initial_information];
+42 [class="", fontsize=12, label=user_details_form];
+54 [class="", fontsize=12, label=action_get_registration_status];
+55 [class="", fontsize=12, label=utter_reg_acc_unregistered_users];
+56 [class="", fontsize=12, label=action_get_account_status];
+58 [class="", fontsize=12, label=utter_pseb_function];
+59 [class="", fontsize=12, label=utter_registration];
+60 [class="", fontsize=12, label=utter_cc_renewal];
+61 [class="", fontsize=12, label=utter_compulsory_to_register];
+62 [class="", fontsize=12, label=utter_reg_reward];
+63 [class="", fontsize=12, label=utter_process_of_renewal];
+64 [class="", fontsize=12, label=utter_cc_branch_reg];
+65 [class="", fontsize=12, label=utter_request_tab];
+66 [class="", fontsize=12, label=utter_certificate_correction];
+67 [class="", fontsize=12, label=utter_sbp];
+68 [class="", fontsize=12, label=utter_ownership_change];
+69 [class="", fontsize=12, label=utter_ntn_change];
+70 [class="", fontsize=12, label=utter_payment_return];
+71 [class="", fontsize=12, label=utter_payment_option];
+72 [class="", fontsize=12, label=utter_time_after_payment];
+73 [class="", fontsize=12, label=utter_po_dd_accept];
+74 [class="", fontsize=12, label=utter_cash_deposit];
+75 [class="", fontsize=12, label=utter_psw_change];
+76 [class="", fontsize=12, label=utter_add_IP];
+77 [class="", fontsize=12, label=utter_cancel_reg];
+78 [class="", fontsize=12, label=utter_dual_year_reg];
+79 [class="", fontsize=12, label=utter_visit_verification];
+80 [class="", fontsize=12, label=utter_whitlisting_process];
+81 [class="", fontsize=12, label=utter_doc_for_reg_renewal];
+82 [class="", fontsize=12, label=utter_website_down];
+83 [class="", fontsize=12, label=utter_ipv6_issue];
+84 [class="", fontsize=12, label=utter_cer_not_received];
+85 [class="", fontsize=12, label=utter_reg_rejected];
+86 [class="", fontsize=12, label=utter_fee_structure];
+87 [class="", fontsize=12, label=utter_update_profile];
+88 [class="", fontsize=12, label=utter_update_bank];
+89 [class="", fontsize=12, label=utter_foreign_services];
+90 [class="", fontsize=12, label=utter_visiting_hours];
+91 [class="", fontsize=12, label=utter_rform_prc];
+92 [class="", fontsize=12, label=utter_tax_cer];
+93 [class="", fontsize=12, label=utter_IT_tax];
+94 [class="", fontsize=12, label=utter_recipient_submission];
+95 [class="", fontsize=12, label=utter_cer_delivery_id];
+96 [class="", fontsize=12, label=utter_reg_without_revenue];
+97 [class="", fontsize=12, label=utter_apply_for_cc_exten];
+98 [class="", fontsize=12, label=utter_num_of_cc_exten];
+99 [class="", fontsize=12, label=utter_fee_for_cc_exten];
+100 [class="", fontsize=12, label=utter_should_start_operation];
+101 [class="", fontsize=12, label=utter_multi_reg_for_single];
+102 [class="", fontsize=12, label=utter_need_secp_firm_reg];
+103 [class="", fontsize=12, label="..."];
+104 [class="", fontsize=12, label=utter_require_assistance];
+106 [class="", fontsize=12, label=utter_bot_name];
+108 [class="", fontsize=12, label=utter_type_of_question_delt];
+110 [class="", fontsize=12, label=utter_laugh];
+112 [class="", fontsize=12, label=utter_appricate];
+114 [class="", fontsize=12, label=utter_acknowledge];
+116 [class="", fontsize=12, label=utter_end_chat];
+118 [class="", fontsize=12, label=user_details_form];
+119 [class="", fontsize=12, label=action_register_guest_user];
+121 [class=intent, fillcolor=lightblue, label="/nlu_fallback", shape=rect, style=filled];
+122 [class=intent, fillcolor=lightblue, label=hello, shape=rect, style=filled];
+123 [class=intent, fillcolor=lightblue, label="software house registration status", shape=rect, style=filled];
+124 [class=intent, fillcolor=lightblue, label="software house application status", shape=rect, style=filled];
+125 [class=intent, fillcolor=lightblue, label="could you provide status of profile", shape=rect, style=filled];
+126 [class=intent, fillcolor=lightblue, label="please provide status of my account", shape=rect, style=filled];
+127 [class=intent, fillcolor=lightblue, label="what are maojr functon of psb", shape=rect, style=filled];
+128 [class=intent, fillcolor=lightblue, label="will you tell me regarding registration", shape=rect, style=filled];
+129 [class=intent, fillcolor=lightblue, label="would you tell me annual renewal charges for call center", shape=rect, style=filled];
+130 [class=intent, fillcolor=lightblue, label="can you tell me is freelancer registration compulsory", shape=rect, style=filled];
+131 [class=intent, fillcolor=lightblue, label="what are the advantage to register at pseb", shape=rect, style=filled];
+132 [class=intent, fillcolor=lightblue, label="process for renew", shape=rect, style=filled];
+133 [class=intent, fillcolor=lightblue, label="what is the process to register for call center branch", shape=rect, style=filled];
+134 [class=intent, fillcolor=lightblue, label="where is visit tab", shape=rect, style=filled];
+135 [class=intent, fillcolor=lightblue, label="how can I change certificate if there's some missing mistakes", shape=rect, style=filled];
+136 [class=intent, fillcolor=lightblue, label="let me know code for receiving IT remittance", shape=rect, style=filled];
+137 [class=intent, fillcolor=lightblue, label="pseb process owner name change", shape=rect, style=filled];
+138 [class=intent, fillcolor=lightblue, label="please tell me process for updation of ntn", shape=rect, style=filled];
+139 [class=intent, fillcolor=lightblue, label="I want my payment back", shape=rect, style=filled];
+140 [class=intent, fillcolor=lightblue, label="what are the process for fees submission", shape=rect, style=filled];
+141 [class=intent, fillcolor=lightblue, label="time after payment has been made", shape=rect, style=filled];
+142 [class=intent, fillcolor=lightblue, label="can I make payment through demand draft", shape=rect, style=filled];
+143 [class=intent, fillcolor=lightblue, label="can you tell cash deposit method is available", shape=rect, style=filled];
+144 [class=intent, fillcolor=lightblue, label="I want to change pin code", shape=rect, style=filled];
+145 [class=intent, fillcolor=lightblue, label="how to update IP", shape=rect, style=filled];
+146 [class=intent, fillcolor=lightblue, label="I want to to cancel registration", shape=rect, style=filled];
+147 [class=intent, fillcolor=lightblue, label="how to get cc subscription for more then one year", shape=rect, style=filled];
+148 [class=intent, fillcolor=lightblue, label="kindly let me know visit verification process", shape=rect, style=filled];
+149 [class=intent, fillcolor=lightblue, label="I want to know white listing procedure", shape=rect, style=filled];
+150 [class=intent, fillcolor=lightblue, label="Required documents for renewal co?", shape=rect, style=filled];
+151 [class=intent, fillcolor=lightblue, label="web server is down", shape=rect, style=filled];
+152 [class=intent, fillcolor=lightblue, label="how to solve ip6 problem", shape=rect, style=filled];
+153 [class=intent, fillcolor=lightblue, label="certificate deliver issue", shape=rect, style=filled];
+154 [class=intent, fillcolor=lightblue, label="information about rejected application", shape=rect, style=filled];
+155 [class=intent, fillcolor=lightblue, label="charges structure by pseb", shape=rect, style=filled];
+156 [class=intent, fillcolor=lightblue, label="profile update", shape=rect, style=filled];
+157 [class=intent, fillcolor=lightblue, label="update information about bank", shape=rect, style=filled];
+158 [class=intent, fillcolor=lightblue, label="does pseb provide services for foreign businesses", shape=rect, style=filled];
+159 [class=intent, fillcolor=lightblue, label="pseb visiting hours", shape=rect, style=filled];
+160 [class=intent, fillcolor=lightblue, label="where to get r form", shape=rect, style=filled];
+161 [class=intent, fillcolor=lightblue, label="how to find certificate of tax exemption", shape=rect, style=filled];
+162 [class=intent, fillcolor=lightblue, label="I want to know tax on IT export", shape=rect, style=filled];
+163 [class=intent, fillcolor=lightblue, label="receipt where to submit", shape=rect, style=filled];
+164 [class=intent, fillcolor=lightblue, label="delivery id of software house certification", shape=rect, style=filled];
+165 [class=intent, fillcolor=lightblue, label="renew registration is possible with out getting profit", shape=rect, style=filled];
+166 [class=intent, fillcolor=lightblue, label="extension of call center", shape=rect, style=filled];
+167 [class=intent, fillcolor=lightblue, label="provsional cal cnter extnsionn nmber", shape=rect, style=filled];
+168 [class=intent, fillcolor=lightblue, label="charges for call center extension", shape=rect, style=filled];
+169 [class=intent, fillcolor=lightblue, label="After getting the provisional letter, should the call center start the operation or wait for pseb certificate even they get the whitelisted IP", shape=rect, style=filled];
+170 [class=intent, fillcolor=lightblue, label="more than one company can be register on single ntn or not", shape=rect, style=filled];
+171 [class=intent, fillcolor=lightblue, label="let me know either I have to scep account for pseb registration", shape=rect, style=filled];
+172 [class=intent, fillcolor=lightblue, label="/nlu_fallback", shape=rect, style=filled];
+173 [class=intent, fillcolor=lightblue, label="/nlu_fallback", shape=rect, style=filled];
+174 [class=intent, fillcolor=lightblue, label="/nlu_fallback", shape=rect, style=filled];
+175 [class=intent, fillcolor=lightblue, label=yes, shape=rect, style=filled];
+176 [class=intent, fillcolor=lightblue, label="I need this", shape=rect, style=filled];
+177 [class=intent, fillcolor=lightblue, label=no, shape=rect, style=filled];
+178 [class=intent, fillcolor=lightblue, label="don't give me a token", shape=rect, style=filled];
+179 [class=intent, fillcolor=lightblue, label=yes, shape=rect, style=filled];
+180 [class=intent, fillcolor=lightblue, label="yes I want you to send an email", shape=rect, style=filled];
+181 [class=intent, fillcolor=lightblue, label="not really", shape=rect, style=filled];
+182 [class=intent, fillcolor=lightblue, label="you don't have need to generate a ticket", shape=rect, style=filled];
+183 [class=intent, fillcolor=lightblue, label="I have an account registered with pseb", shape=rect, style=filled];
+184 [class=intent, fillcolor=lightblue, label="I have not registraion with pseb", shape=rect, style=filled];
+185 [class=intent, fillcolor=lightblue, label="its Z-25-0001/96", shape=rect, style=filled];
+186 [class=intent, fillcolor=lightblue, label="I want to change registration number", shape=rect, style=filled];
+187 [class=intent, fillcolor=lightblue, label="registration ID is  not assign to me", shape=rect, style=filled];
+188 [class=intent, fillcolor=lightblue, label="wuld you help me", shape=rect, style=filled];
+189 [class=intent, fillcolor=lightblue, label="are you a human?", shape=rect, style=filled];
+190 [class=intent, fillcolor=lightblue, label="waht queston yu can ans", shape=rect, style=filled];
+191 [class=intent, fillcolor=lightblue, label=haha, shape=rect, style=filled];
+192 [class=intent, fillcolor=lightblue, label="that’s great", shape=rect, style=filled];
+193 [class=intent, fillcolor=lightblue, label=rihgt, shape=rect, style=filled];
+194 [class=intent, fillcolor=lightblue, label="cee you later", shape=rect, style=filled];
+0 -> 103  [class="", key=NONE, label=""];
+0 -> 121  [class="", key=0];
+0 -> 122  [class="", key=0];
+0 -> 123  [class="", key=0];
+0 -> 124  [class="", key=0];
+0 -> 125  [class="", key=0];
+0 -> 126  [class="", key=0];
+0 -> 127  [class="", key=0];
+0 -> 128  [class="", key=0];
+0 -> 129  [class="", key=0];
+0 -> 130  [class="", key=0];
+0 -> 131  [class="", key=0];
+0 -> 132  [class="", key=0];
+0 -> 133  [class="", key=0];
+0 -> 134  [class="", key=0];
+0 -> 135  [class="", key=0];
+0 -> 136  [class="", key=0];
+0 -> 137  [class="", key=0];
+0 -> 138  [class="", key=0];
+0 -> 139  [class="", key=0];
+0 -> 140  [class="", key=0];
+0 -> 141  [class="", key=0];
+0 -> 142  [class="", key=0];
+0 -> 143  [class="", key=0];
+0 -> 144  [class="", key=0];
+0 -> 145  [class="", key=0];
+0 -> 146  [class="", key=0];
+0 -> 147  [class="", key=0];
+0 -> 148  [class="", key=0];
+0 -> 149  [class="", key=0];
+0 -> 150  [class="", key=0];
+0 -> 151  [class="", key=0];
+0 -> 152  [class="", key=0];
+0 -> 153  [class="", key=0];
+0 -> 154  [class="", key=0];
+0 -> 155  [class="", key=0];
+0 -> 156  [class="", key=0];
+0 -> 157  [class="", key=0];
+0 -> 158  [class="", key=0];
+0 -> 159  [class="", key=0];
+0 -> 160  [class="", key=0];
+0 -> 161  [class="", key=0];
+0 -> 162  [class="", key=0];
+0 -> 163  [class="", key=0];
+0 -> 164  [class="", key=0];
+0 -> 165  [class="", key=0];
+0 -> 166  [class="", key=0];
+0 -> 167  [class="", key=0];
+0 -> 168  [class="", key=0];
+0 -> 169  [class="", key=0];
+0 -> 170  [class="", key=0];
+0 -> 171  [class="", key=0];
+1 -> 172  [class="", key=0];
+1 -> 173  [class="", key=0];
+1 -> 174  [class="", key=0];
+2 -> 175  [class="", key=0];
+2 -> 176  [class="", key=0];
+2 -> 177  [class="", key=0];
+2 -> 178  [class="", key=0];
+3 -> 4  [class="", key=NONE, label=""];
+4 -> "-1"  [class="", key=NONE, label=""];
+11 -> 12  [class="", key=NONE, label=""];
+12 -> "-1"  [class="", key=NONE, label=""];
+18 -> 179  [class="", key=0];
+18 -> 180  [class="", key=0];
+18 -> 181  [class="", key=0];
+18 -> 182  [class="", key=0];
+19 -> 20  [class="", key=NONE, label=""];
+20 -> "-1"  [class="", key=NONE, label=""];
+27 -> 28  [class="", key=NONE, label=""];
+28 -> "-1"  [class="", key=NONE, label=""];
+34 -> "-1"  [class="", key=NONE, label=""];
+35 -> 183  [class="", key=0];
+35 -> 184  [class="", key=0];
+36 -> 185  [class="", key=0];
+36 -> 186  [class="", key=0];
+36 -> 187  [class="", key=0];
+37 -> "-1"  [class="", key=NONE, label=""];
+37 -> 41  [class="", key=NONE, label=""];
+41 -> 42  [class="", key=NONE, label=""];
+42 -> "-1"  [class="", key=NONE, label=""];
+54 -> "-1"  [class="", key=NONE, label=""];
+55 -> "-1"  [class="", key=NONE, label=""];
+56 -> "-1"  [class="", key=NONE, label=""];
+58 -> "-1"  [class="", key=NONE, label=""];
+59 -> "-1"  [class="", key=NONE, label=""];
+60 -> "-1"  [class="", key=NONE, label=""];
+61 -> "-1"  [class="", key=NONE, label=""];
+62 -> "-1"  [class="", key=NONE, label=""];
+63 -> "-1"  [class="", key=NONE, label=""];
+64 -> "-1"  [class="", key=NONE, label=""];
+65 -> "-1"  [class="", key=NONE, label=""];
+66 -> "-1"  [class="", key=NONE, label=""];
+67 -> "-1"  [class="", key=NONE, label=""];
+68 -> "-1"  [class="", key=NONE, label=""];
+69 -> "-1"  [class="", key=NONE, label=""];
+70 -> "-1"  [class="", key=NONE, label=""];
+71 -> "-1"  [class="", key=NONE, label=""];
+72 -> "-1"  [class="", key=NONE, label=""];
+73 -> "-1"  [class="", key=NONE, label=""];
+74 -> "-1"  [class="", key=NONE, label=""];
+75 -> "-1"  [class="", key=NONE, label=""];
+76 -> "-1"  [class="", key=NONE, label=""];
+77 -> "-1"  [class="", key=NONE, label=""];
+78 -> "-1"  [class="", key=NONE, label=""];
+79 -> "-1"  [class="", key=NONE, label=""];
+80 -> "-1"  [class="", key=NONE, label=""];
+81 -> "-1"  [class="", key=NONE, label=""];
+82 -> "-1"  [class="", key=NONE, label=""];
+83 -> "-1"  [class="", key=NONE, label=""];
+84 -> "-1"  [class="", key=NONE, label=""];
+85 -> "-1"  [class="", key=NONE, label=""];
+86 -> "-1"  [class="", key=NONE, label=""];
+87 -> "-1"  [class="", key=NONE, label=""];
+88 -> "-1"  [class="", key=NONE, label=""];
+89 -> "-1"  [class="", key=NONE, label=""];
+90 -> "-1"  [class="", key=NONE, label=""];
+91 -> "-1"  [class="", key=NONE, label=""];
+92 -> "-1"  [class="", key=NONE, label=""];
+93 -> "-1"  [class="", key=NONE, label=""];
+94 -> "-1"  [class="", key=NONE, label=""];
+95 -> "-1"  [class="", key=NONE, label=""];
+96 -> "-1"  [class="", key=NONE, label=""];
+97 -> "-1"  [class="", key=NONE, label=""];
+98 -> "-1"  [class="", key=NONE, label=""];
+99 -> "-1"  [class="", key=NONE, label=""];
+100 -> "-1"  [class="", key=NONE, label=""];
+101 -> "-1"  [class="", key=NONE, label=""];
+102 -> "-1"  [class="", key=NONE, label=""];
+103 -> 118  [class="", key=NONE, label=""];
+103 -> 188  [class="", key=0];
+103 -> 189  [class="", key=0];
+103 -> 190  [class="", key=0];
+103 -> 191  [class="", key=0];
+103 -> 192  [class="", key=0];
+103 -> 193  [class="", key=0];
+103 -> 194  [class="", key=0];
+104 -> "-1"  [class="", key=NONE, label=""];
+106 -> "-1"  [class="", key=NONE, label=""];
+108 -> "-1"  [class="", key=NONE, label=""];
+110 -> "-1"  [class="", key=NONE, label=""];
+112 -> "-1"  [class="", key=NONE, label=""];
+114 -> "-1"  [class="", key=NONE, label=""];
+116 -> "-1"  [class="", key=NONE, label=""];
+118 -> 119  [class="", key=NONE, label=""];
+119 -> 114  [class="", key=NONE, label=""];
+121 -> 1  [class="", key=0];
+122 -> 35  [class="", key=0];
+123 -> 54  [class="", key=0];
+124 -> 55  [class="", key=0];
+125 -> 55  [class="", key=0];
+126 -> 56  [class="", key=0];
+127 -> 58  [class="", key=0];
+128 -> 59  [class="", key=0];
+129 -> 60  [class="", key=0];
+130 -> 61  [class="", key=0];
+131 -> 62  [class="", key=0];
+132 -> 63  [class="", key=0];
+133 -> 64  [class="", key=0];
+134 -> 65  [class="", key=0];
+135 -> 66  [class="", key=0];
+136 -> 67  [class="", key=0];
+137 -> 68  [class="", key=0];
+138 -> 69  [class="", key=0];
+139 -> 70  [class="", key=0];
+140 -> 71  [class="", key=0];
+141 -> 72  [class="", key=0];
+142 -> 73  [class="", key=0];
+143 -> 74  [class="", key=0];
+144 -> 75  [class="", key=0];
+145 -> 76  [class="", key=0];
+146 -> 77  [class="", key=0];
+147 -> 78  [class="", key=0];
+148 -> 79  [class="", key=0];
+149 -> 80  [class="", key=0];
+150 -> 81  [class="", key=0];
+151 -> 82  [class="", key=0];
+152 -> 83  [class="", key=0];
+153 -> 84  [class="", key=0];
+154 -> 85  [class="", key=0];
+155 -> 86  [class="", key=0];
+156 -> 87  [class="", key=0];
+157 -> 88  [class="", key=0];
+158 -> 89  [class="", key=0];
+159 -> 90  [class="", key=0];
+160 -> 91  [class="", key=0];
+161 -> 92  [class="", key=0];
+162 -> 93  [class="", key=0];
+163 -> 94  [class="", key=0];
+164 -> 95  [class="", key=0];
+165 -> 96  [class="", key=0];
+166 -> 97  [class="", key=0];
+167 -> 98  [class="", key=0];
+168 -> 99  [class="", key=0];
+169 -> 100  [class="", key=0];
+170 -> 101  [class="", key=0];
+171 -> 102  [class="", key=0];
+172 -> 2  [class="", key=0];
+173 -> 18  [class="", key=0];
+174 -> 34  [class="", key=0];
+175 -> 3  [class="", key=0];
+176 -> 3  [class="", key=0];
+177 -> 11  [class="", key=0];
+178 -> 11  [class="", key=0];
+179 -> 19  [class="", key=0];
+180 -> 19  [class="", key=0];
+181 -> 27  [class="", key=0];
+182 -> 27  [class="", key=0];
+183 -> 36  [class="", key=0];
+184 -> 41  [class="", key=0];
+185 -> 37  [class="", key=0];
+186 -> 41  [class="", key=0];
+187 -> 41  [class="", key=0];
+188 -> 104  [class="", key=0];
+189 -> 106  [class="", key=0];
+190 -> 108  [class="", key=0];
+191 -> 110  [class="", key=0];
+192 -> 112  [class="", key=0];
+193 -> 114  [class="", key=0];
+194 -> 116  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>
